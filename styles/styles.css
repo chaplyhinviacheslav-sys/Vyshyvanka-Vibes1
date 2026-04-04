@@ -283,10 +283,12 @@ header .container {
 }
 
 .collection-section {
-    padding-bottom: 70px;
+    padding-bottom: 75px;
 }
 
-.collection-container {}
+.collection-container {
+    overflow: hidden;
+}
 
 .coll-title {
     font-weight: 500;
@@ -305,21 +307,22 @@ header .container {
 
 .coll-item {
     flex-basis: calc((100% - 40px) / 3);
-}
-
-.ornament-anchor {
-    position: absolute;
+    position: relative;
 }
 
 .coll-item-svg {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 114px;
+    right: 262px;
     fill: #ecd979;
+    stroke-width: 1px;
+    z-index: 888;
 }
 
 .coll-item-img {
     margin-bottom: 18px;
+    position: relative;
+    z-index: 999;
 }
 
 .coll-item-title {
